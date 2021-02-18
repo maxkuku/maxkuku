@@ -1,0 +1,96 @@
+<?php #header("Access-Control-Allow-Origin: http://webvisor.com");
+#header( "Last-Modified: " . date ("F d Y H:i:s.", filemtime("two.php")) );?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Третий раунд</title>
+    <link rel="shortcut icon" href="littlegq.jpg"/>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="fontawesome.css" type="text/css"/>
+    <link rel="stylesheet" href="style.css?c=23?>"/>
+    <script type="application/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="application/javascript" src="bootstrap.js"></script>
+    <script type="application/javascript" src="aes-min.js"></script>
+    <script type="application/javascript" src="script.js?c=23"></script>
+    <script>
+        var elem = document.documentElement;
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+            }
+        }
+        $(document).ready(function(){
+            $('body').one("keydown", function(event) {
+                if(event.which === 70){
+                    openFullscreen();
+                }
+                if(event.which === 27){
+                    closeFullscreen();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div id="wrap" class="three">
+    <img id="logo" src="images/logo-new-b2020.png" alt="logo" class="cornered" />
+    <div id="top"><h1>Третий раунд</h1></div>
+    <div id="mid">
+        <div id="left"></div>
+        <div id="center">
+            <div class="row-line first last l1">
+                <div class="col-line first">Вопросы:</div>
+                <div id="quest_0" class="col-line">200</div>
+                <div id="quest_1" class="col-line">400</div>
+                <div id="quest_2" class="col-line">600</div>
+                <div id="quest_3" class="col-line">800</div>
+                <div id="quest_4" class="col-line last">1000</div>
+            </div>
+        </div>
+        <div id="right">
+            <div class="inner"></div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div class="counts3">
+            <div id="count0" title="Количество вопросов">0</div>
+            <div id="count1">0</div>
+            <div id="count2">0</div>
+            <div id="count3">0</div>
+            <div id="count4" title="Сумма очков общая">0</div>
+            <div id="reset" title="Сброс">C</div>
+            <div id="count5" title="В начало"><a href="index.html">Н</a></div>
+            <!--div id="second_round" onclick="location.href='two.html?l=23'" title="Второй раунд"><i class="fa fa-chevron-left"></i></div-->
+            <!--div id="third_round" onclick="location.href='three.html?l=23'" title="Третий раунд"><i class="fa fa-chevron-right"></i></div-->
+        </div>
+    </div>
+</div>
+<audio id="audio" src="CombineTimerChime.mp3"></audio>
+<script>
+    $(document).ready(function readF(){
+        rFile('list3.txt');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "lang":"ru",
+  "dir":"ltr",
+  "name":"St. Iov game",
+  "short_name":"Iov game",
+  "author":"maxkuku_at_gmail_dot_com",
+  "start_url":"index.html",
+  "icons":[
+    {
+      "src":"littlegq.jpg",
+      "sizes":"49x49",
+      "type":"image/jpeg"
+    }
+  ],
+  "theme_color":"#fae9be",
+  "background_color":"#373ECB",
+  "display":"fullscreen",
+  "orientation":"landscape",
+  "gcm_sender_id": "668440252050",
+  "permissions": [
+    "gcm"
+  ]
+}
