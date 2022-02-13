@@ -38,9 +38,6 @@ function obnul(){
 
 $(document).ready(function main(ev1){
 
-    let n = new Date();
-    $('#year').text(n.getFullYear())
-
 
     $('#count0').text(getCookie('name0'));
     $('#count1').text(getCookie('name1'));
@@ -362,7 +359,6 @@ function dodo2(){
 
     $('.close').click(function (e) {
         $('#modal-quest').removeClass('in');
-        $('#dig.modal-body').html('');
         $('body').removeClass('modal-open');
         $('#dig').removeClass('modal-body');
     });
@@ -471,13 +467,8 @@ $(document).ready(function(){
                 'height': '40px',
                 'transform': 'translateX(0%)',
                 'width': '4%',
-                'left': '86%',
-                'z-index': '-1',
+                'left': '86%'
             });
-            $('#year').css({
-                'fontSize': '5px',
-                'top': '89%',
-            })
             $('#logo').attr('class', 'cornered');
         }, 1000);
         setTimeout(function () {
